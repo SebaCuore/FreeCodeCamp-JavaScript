@@ -1,0 +1,64 @@
+:root {
+  --primary-color: #2c3e50;
+  --accent-color: #e74c3c;
+  --bg-card: #ffffff;
+  --border-color: #dfe6e9;
+  --text-main: #2d3436;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item-list li {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  color: var(--text-main);
+  transition: transform 0.2s ease;
+}
+
+.item-list li:hover {
+  transform: translateX(5px);
+}
+
+.favorite-icon {
+  background: none;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.favorite-icon.filled {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  background-color: #fff5f5;
+  transform: scale(1.1);
+}
+
+.favorite-icon:hover {
+  background-color: #f8f9fa;
+}
+
+.filled {
+  color: red;
+  background-color: #ffebee;
+  border-color: red;
+}
