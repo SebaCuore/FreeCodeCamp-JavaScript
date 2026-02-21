@@ -1,0 +1,36 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  transition: background 0.3s, color 0.3s;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+body.theme-dark {
+  --bg-color: #1b1b32;
+  --text-color: #f5f6f7;
+}
+
+body.theme-light {
+  --bg-color: #f5f6f7;
+  --text-color: #1b1b32;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+#status {
+  text-align: center;
+  min-height: 20px;
+}
